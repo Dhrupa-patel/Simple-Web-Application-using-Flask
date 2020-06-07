@@ -23,4 +23,4 @@ create TABLE users(Name VARCHAR(20), Desgination VARCHAR(20), Address VARCHAR(30
 ```
 # Screenshots of Web application
 
-<img src="OutputScreenshots/outputSC-1.JPG" width="250px" height="150px"> <img src="OutputScreenshots/outputSC-2.JPG" width="250px" height="150px"> <img src="OutputScreenshots/outputSC-3.JPG" width="250px" height="150px"> <img src="OutputScreenshots/outputSC-4.JPG" width="250px" height="150px">
+<img src="OutputScreenshots/outputSC-1.JPG" width="350px" height="150px"> <img src="OutputScreenshots/outputSC-2.JPG" width="350px" height="150px"> <img src="OutputScreenshots/outputSC-3.JPG" width="350px" height="150px"> <img src="OutputScreenshots/outputSC-4.JPG" width="350px" height="150px">
