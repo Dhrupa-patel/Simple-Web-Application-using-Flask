@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %} Add Employee {% endblock %}
+
+{% block body %}
+<div>
+    <div class="well text-center" style="background-color: powderblue">
+        <h1>Provide Details For Adding Employee</h1>
+    </div>
+</div>
+<form class="form-horizontal" method="POST" action="/update">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="fname">Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="For ex. Rachel" name="fname" id="fname" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Dgn">Designation:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="For ex. Student" name="Dgn" id="Dgn" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Address">Address</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="For ex. India" name="Address" id="Address" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="phone" style="font font: italic bold 20px/30px serif">Phone</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="8456903672" name="phone" id="phone" pattern="[0-9]{10}" required>
+      </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10" style="text-align:center">
+            <input type="submit" class="btn btn-primary btn-lg" style="background-color:green" value="Add">
+            <button type="button" onClick="location.href='/'" class="btn btn-primary btn-lg">Back</button>
+        </div>
+    </div>
+    </form>
+</table>
+
+{% endblock %}
