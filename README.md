@@ -10,9 +10,10 @@ I have used pycharm IDLE for developing this web application. Following is the c
 ```
 pip install flask
 pip install flask-mysqldb
+pip install PyYAML
 ```
 - Download Code from source repository and place it in pycharm project folder
-- configure Database Credentials and parameters in .yaml file present in static folder of the Downloaded Code.
+- configure Database Credentials and parameters in db.yaml file.
 
 ## 2. Create Database and Table
 For this project I have created Database and table manually. Following is command for creating it.
@@ -22,3 +23,4 @@ create TABLE users(Name VARCHAR(20), Desgination VARCHAR(20), Address VARCHAR(30
 ```
 # Screenshots of Web application
 
+<img src="OutputScreenshots/outputSC-1.JPG" width="250px" height="150px"> <img src="OutputScreenshots/outputSC-2.JPG" width="250px" height="150px"> <img src="OutputScreenshots/outputSC-3.JPG" width="250px" height="150px"> <img src="OutputScreenshots/outputSC-4.JPG" width="250px" height="150px">
