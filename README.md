@@ -19,7 +19,7 @@ pip install PyYAML
 For this project I have created Database and table manually. Following is command for creating it.
 ```
 create DATABASE employeedetails
-create TABLE users(Name VARCHAR(20), Desgination VARCHAR(20), Address VARCHAR(30), Phone INT(12))
+create TABLE users(Name VARCHAR(20), Desgination VARCHAR(20), Address VARCHAR(30), Phone BIGINT(10))
 ```
 # Host Web application
 For execution for above provided code. Above pre-requisities should be followed. Following are the steps to run it.
