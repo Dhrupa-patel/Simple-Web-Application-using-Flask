@@ -20,6 +20,7 @@ def search():
     if request.method == 'POST':
         userDetails = request.form
         val = userDetails['search']
+        print(val)
         curr = mysql.connection.cursor()
         resultVal = curr.execute('SELECT * FROM users where Name = %s or Designation = %s or Phone = %s', (val,val,val,))
         if resultVal > 0:
