@@ -50,6 +50,7 @@ def update():
         dgn = userDetails['Dgn']
         adrs = userDetails['Address']
         phn = userDetails['phone']
+        print(name, dgn, adrs, phn)
         curr = mysql.connection.cursor()
         curr.execute('INSERT INTO users(Name, Designation, Address, Phone) VALUES(%s,%s,%s,%s)',(name,dgn,adrs,phn))
         mysql.connection.commit()
