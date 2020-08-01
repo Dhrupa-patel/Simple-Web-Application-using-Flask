@@ -20,6 +20,7 @@ def search():
     if request.method == 'POST':
         userDetails = request.form
         val = userDetails['search']
+        print(val)
         curr = mysql.connection.cursor()
         resultVal = curr.execute('SELECT * FROM users where Name = %s or Designation = %s or Phone = %s', (val,val,val,))
         if resultVal > 0:
@@ -49,6 +50,7 @@ def update():
         dgn = userDetails['Dgn']
         adrs = userDetails['Address']
         phn = userDetails['phone']
+        print(name, dgn, adrs, phn)
         curr = mysql.connection.cursor()
         curr.execute('INSERT INTO users(Name, Designation, Address, Phone) VALUES(%s,%s,%s,%s)',(name,dgn,adrs,phn))
         mysql.connection.commit()
@@ -63,6 +65,7 @@ def delete():
     if request.method == 'POST':
         userDetails = request.form
         name = userDetails['fname']
+        print(name)
         curr = mysql.connection.cursor()
         resultValue= curr.execute('SELECT * FROM users where Name=%s',(name,))
         if resultValue > 0:
